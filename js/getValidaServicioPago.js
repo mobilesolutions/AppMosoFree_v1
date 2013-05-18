@@ -41,14 +41,15 @@
             console.log("Read as text");
             console.log(evt.target.result);
 			var cadena = evt.target.result;
+			//alert(cadena);
 			cadena = cadena.replace("{","");
 			cadena = cadena.replace("}","");
-			alert(cadena);
+			
 			ArrayCadena = cadena.split(",");
 			//alert(ArrayCadena[3]);
 			stringActivacion = ArrayCadena[3]
 			ArrayActivacion = stringActivacion.split(":");
-			alert(ArrayActivacion[1]);
+			//alert(ArrayActivacion[1]);
 			if(ArrayActivacion[1].trim() == "1")
 				vActivacion = 1;
 				
