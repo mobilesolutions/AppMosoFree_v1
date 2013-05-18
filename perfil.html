@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App MOSO</title>
+	 
+    <script src="js/jquery.js"></script>
+	<script src="js/inicio.js"></script>
+	<script src="js/validarActivcion.js"></script>
+	 <script src="cordova-1.9.0.js"></script>
+     
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body onLoad="onLoad()">
+
+<div class="page">
+    <div class="head">
+        <p><a style="float:left;" href="index.html">Apps MOSO</a><a style="float:right;" href="index.html">Volver</a></p>
+    </div>
+    
+    <div class="sub-head">
+        Reg&iacute;strate en Apps MOSO
+    </div>
+    
+     <div class="content-registro"  >
+    
+    
+    <h5>Pais:</h5>
+    <p><select id="pais" ></select></p>
+    
+    
+    <h5>Operadora:</h5>
+    <p><select id="operadora"></select></p>
+    
+    <h5>N&uacute;mero:</h5>
+    <p>
+    <input type="number" name="numUser" id="numUser"  style=""/>
+    </p>
+    
+    <div class="btnForm"  >
+    	<a id="btnRegistrar" href="#">Continuar</a>
+    
+    </div>
+   <!-- <div id="file-system-text"></div>
+  	<span id="file-status">Status:</span>
+   					<span id="file-contents"></span>
+                    	Read text: <span id="file-read-text"></span><br/>
+   					Data Url: <span id="file-read-dataurl"></span>-->
+                    
+      <div id="busy">Cargando...</div>
+
+</div>
+
+<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+</body>
+</html>

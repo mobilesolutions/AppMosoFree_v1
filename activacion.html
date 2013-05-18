@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App MOSO</title>
+	 
+    <script src="js/jquery.js"></script>
+     <script src="cordova-1.9.0.js"></script>
+    <script src="js/validarActivcionClave.js"></script>	
+     <script src="js/activacion.js"></script>
+	 
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body onLoad="onLoad()">
+
+
+<div class="page">
+     <div class="head">
+        <p><a href="http://bip.pe/bip/">Apps MOSO</a></p>
+    </div>
+    
+    <div class="sub-head">
+        Reg&iacute;strate en Apps MOSO
+    </div>
+    
+     <div class="content-registro" >
+    <h3>En breves momentos le llegara un sms con un codigo de activacion:</h3>
+    <br>
+    <h5>Ingrese codigo de activacion:</h5>
+     <p>
+    <input type="text" name="codigo" id="codigo"  style="padding: 5px;width: 99%;margin: auto;"/>
+    </p>
+   <div class="btnForm"  >
+    	<a id="btnRegistrar" href="#">Validar</a>
+    
+    </div>
+    
+     </div>
+  
+    
+ <div id="busy">Cargando...</div>
+</div>
+<script type="text/javascript" charset="utf-8" src="apis/fileActive.js"></script>
+
+</body>
+</html>

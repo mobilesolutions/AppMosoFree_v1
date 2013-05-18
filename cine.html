@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App MOSO</title>
+	 
+    <script src="js/jquery.js"></script>
+	   <script src="js/cine.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script> 
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body class="cine">
+
+<div class="page">
+    <div class="head">
+        <p>
+        
+          <a style="float:left;" href="index.html">CINE MOSO</a>
+         
+         <a style="float:right;" href="perfil.html">Mi Perfil</a>
+        
+        </p>
+    </div>
+    
+    <div class="contentMenu">
+    
+   		<a class="noborder" href="index.html">INICIO<span></span></a>
+    	<a class="select" href="cine.html">PELICULAS<span></span></a>
+        <a href="#">MI CUENTA<span></span></a>
+    
+    </div>
+    
+    
+    <div id="buscar" class="buscar" style="display:none;">
+    <input type="search" id="buscar" placeholder="Buscar" />
+    </div>
+    
+    
+    <div class="contentPage">
+    
+      
+          
+          <h1 class="ayer">CINE en tu celular</h1>
+   
+   
+   
+   
+   <div class="servicios">
+   	<ul>    	
+        <div class="clear"></div>  
+    </ul> 
+    <div class="clear"></div>  
+   </div>
+   
+   
+     <div class="salas" style="display:none;">
+     	<div class="cine">
+        <div class="clear"></div>
+        </div>
+        <ul>    	
+              
+        </ul>      
+   </div>
+        
+        
+     
+     
+     <div class="peliculas" style="display:none;">
+     	 
+        <ul>    	
+              
+        </ul>      
+    </div>
+    
+      <div class="detalle" style="display:none;">
+     	<h1 id="titulo"></h1> 
+        <div class="contentDetalle">
+        	<div class="contentDetalleImagen"></div>
+            <div class="contentDetalleOpciones">
+            	<a href="#video" id="detalleTrailer">VER TRAILER</a>
+                <a href="#detalle" id="detallePelicula">DETALLES</a>
+                <a href="#mapa" id="detallePelicula">COMO LLEGAR</a>
+                <a onClick="ocultarDetalle()" id="regresarPelicula">VOLVER</a>                
+            </div>        
+        	<div class="clear"></div>
+        </div>
+        
+        <div class="contentHorario">
+        	<h3>Horarios:</h3>
+            <p></p>
+        </div>
+        
+        <div id="detalle" class="contentSipnosis">
+        	<h3>Sipnosis:</h3>
+             <p></p>
+        </div>
+        <div class="contentGenero">
+        	<h3>Detalle:</h3>
+        </div>
+        <div id="video" class="contentVideo">
+        	<h3>Trailer:</h3>
+             <p></p>
+             <div class="content-iframe"></div>
+        </div> 
+        
+        <div id="mapa" class="contentMapa">
+        	<h3>Mapa:</h3>
+            <span id="errorGeo"></span>
+            <div id="geoLocation" style="width:100%; height:300px;"></div>
+        </div>       
+        
+        
+    </div>
+   
+   
+   
+    
+    </div>
+    
+     
+    
+    
+  
+     <div id="busy">Cargando...</div>
+
+</div>
+
+
+</body>
+</html>

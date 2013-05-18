@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App MOSO</title>
+	 
+    <script src="js/jquery.js"></script>
+     <script src="cordova-1.9.0.js"></script>
+   <script src="js/getValidaServicioPago.js"></script>
+   
+	   <script src="js/rt.js"></script>
+       
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body class="cine">
+
+<div class="page rt">
+    <div class="head">
+        <p>
+          <a style="float:left;" href="index.html">MUSICA MOSO</a>
+         
+         <a style="float:right;" href="perfil.html">Mi Perfil</a>
+        </p>
+    </div>
+    
+    <div class="contentMenu">
+    
+   		<a class="noborder" href="index.html">INICIO<span></span></a>
+    	<a class="m select" title="canciones">CANCIONES<span></span></a>
+        <a class="m" title="artistas">ARTISTAS<span></span></a>
+    
+    </div>
+    
+    
+    <div id="buscar" class="buscar" >
+    <input type="search" id="txtbuscar" placeholder="Buscar canciones" />
+    </div>
+    
+    
+    <div class="contentPage" id="canciones">
+    
+      
+          
+          <h1 class="ayer">CANCIONES</h1>   
+      
+     <div class="salas" >
+     	
+        <ul>    	
+              
+        </ul>      
+   </div>  
+   
+    
+    </div>
+    
+    <div class="contentPage" id="artistas" style="display:none;">
+    
+      
+          
+          <h1 class="ayer">ARTISTAS</h1>   
+      
+     <div class="salas" >
+     	
+        <ul>    	
+              
+        </ul>      
+   </div>  
+   
+    
+    </div>
+    
+     
+    
+    
+  
+     <div id="busy">Cargando...</div>
+
+</div>
+
+
+</body>
+</html>
