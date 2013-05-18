@@ -87,12 +87,12 @@ function getDescarga(){
 					//alert($(this).attr("id"));
                		if(vActivacion==1){
 						codigo = $(this).attr("id");
-						alert("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo);
+						//alert("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo);
 						$.get("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo, function (data) {
-				 			alert(data);
-							windows.location.href = data; 	
-							//$("#canciones ul li#" + codigo).find(".descargar").remove();
-							//$("#canciones ul li#" + codigo).append("<div class='descargar'><a href='"+data+"'>Descargar Cancion</a></div>");
+				 			//alert(data);
+							//windows.location.href = data; 	
+							$("#canciones ul li#" + codigo).find(".descargar").remove();
+							$("#canciones ul li#" + codigo).append("<div class='descargar'><a href='"+data+"'>Descargar Cancion</a></div>");
 				  		});			   
 					}
 					else{
