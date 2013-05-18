@@ -79,7 +79,7 @@ function getDescarga(){
 	//alert(vNumUser);
 				//alert(vActivacion);
 				
-	$("#canciones ul li").each(function() {
+	$("#canciones ul li p, #canciones ul li span, #canciones ul li img").each(function() {
 				
 				
                 $(this).click(function(evento) {
