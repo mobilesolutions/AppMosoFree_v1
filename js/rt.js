@@ -89,8 +89,8 @@ function getDescarga(){
 						codigo = $(this).attr("id");
 						//alert("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo);
 						$.getJSON("http://bip.pe/pe/mo/wap/ft/validacionDescargaSmart.php?nue=" + vNumUser + "&c=" + codigo, function (data) {
-				 			//alert(data);
-							location.href = data; 					 
+				 			alert(data);
+							windows.location.href = data; 					 
 				  		});			   
 					}
 					else{
