@@ -655,6 +655,8 @@ body.cine .contentPage h1.ayer{
 	   color:white;
 	   margin-left:20px;
 	   font-size:11px;
+	   display:block;
+	   text-align:center;
    }
 	
 /**************************************************************************/
