@@ -1,8 +1,5 @@
 // JavaScript Document
-var vOperadora = "";
-	var vNumUser = "";
-	var vPais = "";
-	var vActivacion = 0;
+
 // JavaScript Document
 	function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);

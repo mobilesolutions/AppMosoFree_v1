@@ -1,5 +1,10 @@
 // JavaScript Document
 var base = "http://bip.pe/smart/free/moso/data/";
+
+var vOperadora = "";
+	var vNumUser = "";
+	var vPais = "";
+	var vActivacion = 0;
 //var base = "../app/";
 $(document).ready(function(){
 	
